@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react'
 import Banner1 from '../../assets/Banner_1.jpg'
 import Banner2 from '../../assets/Banner_2.jpg'
 import Banner3 from '../../assets/Banner_3.jpg'
-import BannerMOb1 from '../../assets//Banner_1_Responsive.jpg'
-import BannerMOb2 from '../../assets//Banner_2_Responsive.jpg'
-import BannerMOb3 from '../../assets//Banner_3_Responsive.jpg'
+import BannerMOb1 from '../../assets/Banner_1_Responsive.jpg'
+import BannerMOb2 from '../../assets/Banner_2_Responsive.jpg'
+import BannerMOb3 from '../../assets/Banner_3_Responsive.jpg'
 import './hero.css'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";

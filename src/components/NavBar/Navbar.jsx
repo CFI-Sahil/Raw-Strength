@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavbarMenu } from './data'
+import Logo from '../../assets/Logo.png'
 import { FaDumbbell } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
@@ -18,7 +19,7 @@ const Navbar = () => {
                         {/* <FaDumbbell size={32} />
                         <p className="col-ch">raw <span>strength</span></p> */}
 
-                        <img src="src/assets/Logo.png" alt="Logo" className=' bg-cover w-50 md:w-40 lg:w-60'/>
+                        <img src={Logo} alt="Logo" className=' bg-cover w-50 md:w-40 lg:w-60'/>
                     </div>
                     {/* menu section */}
                     <div className='hidden md:block'>

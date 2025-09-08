@@ -1,0 +1,90 @@
+* {
+
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+:root {
+    --primary: #2563eb;
+    --secondary: #F8BF16;
+    --background: #ffffff;
+    --text-heading: #313131;
+    --text: #333333;
+
+    --font-heading: "Oswald", sans-serif;
+    --font-body: "Roboto", sans-serif;
+}
+
+/* banner info */
+
+.bgcol-grad {
+    background: linear-gradient(190deg, #2563eb, #3b82f6, #3b82f6, #2563eb);
+    border-radius: 10px;
+}
+
+.text-colr {
+    color: var(--secondary);
+}
+
+@media(max-width:320px) {
+    .tex-sm-font {
+        font-size: 3rem;
+    }
+}
+
+@media(max-width:425px) {
+    .text-colr {
+        color: var(--secondary);
+    }
+}
+
+/* slider section */
+
+.slick-slider {
+    cursor: grab;
+}
+
+.slick-slider .slick-draggin {
+    cursor: grabbing !important;
+}
+
+.banner-slider .slick-dots {
+    bottom: -30px !important;
+}
+
+.slick-dots li {
+    margin: 0 1px !important;
+}
+
+.slick-dots li button::before {
+    content: '' !important;
+    display: block;
+    width: 10px !important;
+    height: 10px !important;
+    opacity: 1 !important;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.slick-dots li.slick-active button::before {
+    background-color: var(--primary);
+}
+
+
+@media(max-width:768px) {
+    .slick-dots li button::before {
+        width: 8px !important;
+        height: 8px !important;
+    }
+
+    .slick-slider {
+        cursor:auto;
+    }
+
+    .slick-slider .slick-draggin {
+        cursor: auto !important;
+    }
+}

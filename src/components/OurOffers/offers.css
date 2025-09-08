@@ -1,0 +1,34 @@
+*{
+
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+:root {
+  --primary: #2563eb;
+  --secondary: #F8BF16;
+  --background: #ffffff;
+  --text-heading:#313131;
+  --text: #333333;
+
+--font-heading: "Oswald", sans-serif;
+--font-body: "Roboto", sans-serif;
+}
+
+
+/* icon color section */
+.my-icon{
+    color: var(--primary);
+}
+
+/* heading color section */
+.col-ch-idk{
+    color: #313131;
+    font-family: var(--font-heading);
+}
+
+/* paragraph section */
+.text-chan-to-som{
+    color: var(--text);
+}

@@ -1,0 +1,32 @@
+* {
+
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+:root {
+    --primary: #2563eb;
+    --secondary: #F8BF16;
+    --background: #ffffff;
+    --text-heading: #313131;
+    --text: #333333;
+
+    --font-heading: "Oswald", sans-serif;
+    --font-body: "Roboto", sans-serif;
+}
+
+/* background section */
+.bg-bl-foot{
+    background-color: var(--text-heading);
+}
+
+/* text heading section */
+.tex-he-foot{
+    color: var(--background);
+}
+
+/* content section */
+.tex-con-foot{
+    color: var(--background);
+}

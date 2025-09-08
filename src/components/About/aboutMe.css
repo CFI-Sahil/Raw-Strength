@@ -1,0 +1,33 @@
+*{
+
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+:root {
+  /* --primary: #2563eb; */
+  --primary: #144DB2;
+  --secondary: #F8BF16;
+  --background: #ffffff;
+  --text-heading:#313131;
+  --text: #333333;
+
+--font-heading: "Oswald", sans-serif;
+--font-body: "Roboto", sans-serif;
+}
+
+.mak-tex-g{
+    color: var(--text);
+}
+
+.mak-it-pri{
+    color: var(--primary);
+}
+
+
+@media(max-width:425px){
+    .res-for-425{
+        text-align: center;
+    }
+}

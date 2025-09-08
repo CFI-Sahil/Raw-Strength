@@ -1,0 +1,50 @@
+* {
+
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+:root {
+    --primary: #2563eb;
+    --secondary: #F8BF16;
+    --background: #ffffff;
+    --text-heading: #313131;
+    --text: #333333;
+
+    --font-heading: "Oswald", sans-serif;
+    --font-body: "Roboto", sans-serif;
+}
+
+.tex-to-head{
+    color: var(--text-heading);
+    font-family: var(--font-heading);
+    letter-spacing: 1px;
+}
+
+/* box section */
+.for-tbg-ch{
+    background-color: #f0f6ff;
+}
+
+/* month section */
+.bg-to-pr{
+    background-color: var(--text);
+}
+
+/* text */
+.text-to-pr{
+    color: #333333;
+}
+
+/* btn section */
+.get-st-btn{
+    background-color: var(--primary);
+    color: var(--background);
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.get-st-btn:active{
+    scale: .8;
+}

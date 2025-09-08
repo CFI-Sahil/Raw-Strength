@@ -1,0 +1,42 @@
+* {
+
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+:root {
+    --primary: #2563eb;
+    --secondary: #F8BF16;
+    --background: #ffffff;
+    --text-heading: #313131;
+    --text: #333333;
+
+    --font-heading: "Oswald", sans-serif;
+    --font-body: "Roboto", sans-serif;
+}
+/* heading section */
+.head-tex{
+    font-family: var(--font-heading);
+    color: var(--text-heading);
+    letter-spacing: 1.5px;
+}
+
+/* card bg color section */
+.bg-ch-pr-li{
+    background-color: var(--background);
+}
+
+/* card name section */
+.change-ter{
+    color: var(--text-heading);
+}
+
+/* card content section */
+.change-tex-to{
+    color: var(--text);
+}
+
+
+
+

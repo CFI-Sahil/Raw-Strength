@@ -1,7 +1,4 @@
 import React from 'react';
-import { FaDumbbell } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
 import LogoWhite from '../../assets/Logo_White.png'
 import './footer.css'
 
@@ -15,7 +12,7 @@ const Footer = () => {
                         <div className="flex items-center font-bold text-2xl gap-2 uppercase cursor-pointer ml-12 md:ml-50 lg:ml-0">
                             {/* <FaDumbbell size={32} />
                             <p className="col-ch">raw <span>strength</span></p> */}
-                            <img src="src/assets/Logo_White.png" alt="Logo" className=' bg-cover w-60'/>
+                            <img src={LogoWhite} alt="Logo" className=' bg-cover w-60'/>
                         </div>
                         {/* section 1 */}
                         <div className='text-[16px] tex-con-foot mt-0 ml-0 md:mt-[5rem] md:ml-[-32rem] lg:mt-0 lg:ml-0'>

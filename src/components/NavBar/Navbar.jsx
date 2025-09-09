@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavbarMenu } from './data'
 import Logo from '../../assets/Logo.png'
-import { FaDumbbell } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import { Link } from 'react-scroll';
@@ -16,9 +15,6 @@ const Navbar = () => {
                 <div className='container px-[22px] md:px-10 lg:px-[3.2rem] flex items-center justify-between py-6 xl:px-0 md:mx-auto'>
                     {/* logo section */}
                     <div className="flex items-center font-bold text-2xl gap-2 uppercase cursor-pointer">
-                        {/* <FaDumbbell size={32} />
-                        <p className="col-ch">raw <span>strength</span></p> */}
-
                         <img src={Logo} alt="Logo" className=' bg-cover w-50 md:w-40 lg:w-60'/>
                     </div>
                     {/* menu section */}

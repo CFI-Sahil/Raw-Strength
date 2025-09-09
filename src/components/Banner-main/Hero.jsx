@@ -1,17 +1,19 @@
-import React, { useEffect, useState } from 'react'
-import Banner1 from '../../assets/Banner_1.jpg'
-import Banner2 from '../../assets/Banner_2.jpg'
-import Banner3 from '../../assets/Banner_3.jpg'
-import BannerMOb1 from '../../assets/Banner_1_Responsive.jpg'
-import BannerMOb2 from '../../assets/Banner_2_Responsive.jpg'
-import BannerMOb3 from '../../assets/Banner_3_Responsive.jpg'
-import './hero.css'
+import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
+
+import Banner1 from '../../assets/Banner_1.jpg';
+import Banner2 from '../../assets/Banner_2.jpg';
+import Banner3 from '../../assets/Banner_3.jpg';
+import BannerMOb1 from '../../assets/Banner_1_Responsive.jpg';
+import BannerMOb2 from '../../assets/Banner_2_Responsive.jpg';
+import BannerMOb3 from '../../assets/Banner_3_Responsive.jpg';
+
+import './hero.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const Hero = () => {
 
-    const [mobile, setMobile] = useState(false);
+const Hero = () => {
+    const [mobile, setMobile] = useState(window.innerWidth <= 425);
 
     useEffect(() => {
         const handleSize = () => {
@@ -22,7 +24,11 @@ const Hero = () => {
         return () => window.removeEventListener('resize', handleSize);
     }, []);
 
-    const sliderSys = {
+    const banners = mobile
+        ? [BannerMOb1, BannerMOb2, BannerMOb3]
+        : [Banner1, Banner2, Banner3];
+
+    const sliderSettings = {
         dots: true,
         arrows: false,
         infinite: true,
@@ -34,50 +40,21 @@ const Hero = () => {
         cssEase: "linear",
         pauseOnHover: true,
         pauseOnFocus: true,
-
-        responsive: [
-            {
-                breakpoint: 4000,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                }
-            },
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    initialSlide: 1,
-                }
-            },
-            {
-                breakpoint: 640,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            },
-        ]
     };
 
     return (
-        <>
-            <section>
-                <div className='container mx-auto px-6 md:p-10 lg:p-12 xl:p-0 my-10 md:my-0 md:mt-0 lg:mt-2 xl:mt-14 banner-slider'>
-                    <Slider {...sliderSys}>
-                        {(mobile ? [BannerMOb1, BannerMOb2, BannerMOb3] : [Banner1, Banner2, Banner3])
-                            .map((banner, index) => (
-                                <div key={index}>
-                                    <img src={banner} alt={`Banner ${index + 1}`} />
-                                </div>
-                            ))}
-                    </Slider>
-                </div>
-            </section>
-        </>
-    )
-}
+        <section>
+            <div className="container mx-auto px-6 md:p-10 lg:p-12 xl:p-0 my-10 md:my-0 md:mt-0 lg:mt-2 xl:mt-14 banner-slider">
+                <Slider {...sliderSettings}>
+                    {banners.map((banner, index) => (
+                        <div key={index}>
+                            <img className="banner-image" src={banner} alt={`Banner ${index + 1}`} />
+                        </div>
+                    ))}
+                </Slider>
+            </div>
+        </section>
+    );
+};
 
-export default Hero
+export default Hero;

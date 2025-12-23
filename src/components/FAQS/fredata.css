@@ -1,0 +1,46 @@
+*{
+
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+:root {
+  --primary: #2563eb;
+  --secondary: #F8BF16;
+  --background: #ffffff;
+  --text-heading:#313131;
+  --text: #333333;
+
+--font-heading: "Oswald", sans-serif;
+--font-body: "Roboto", sans-serif;
+}
+
+.fa-font-head{
+    /* font-family: var(--font-heading); */
+    color: var(--text-heading);
+}
+
+.faq-desc{
+    color: var(--text);
+}
+
+.faq-link{
+    color: var(--primary);
+    transition: .2s ease;
+}
+.faq-link:active{
+    color: var(--secondary);
+}
+
+@media(max-width:320px){
+    .make-it-lg{
+        font-size: 26px;
+    }
+    .for-320-px{
+        width: 280px;
+    }
+    .red-pad{
+        padding: .6rem;
+    }
+}

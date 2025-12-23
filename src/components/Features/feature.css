@@ -1,0 +1,61 @@
+*{
+
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-family: "Raleway", sans-serif;
+}
+
+
+:root {
+  --primary: #2563eb;
+  --secondary: #F8BF16;
+  --background: #ffffff;
+  --text-heading:#313131;
+  --text: #333333;
+
+--font-heading: "Raleway", sans-serif;
+--font-body: "Roboto", sans-serif;
+}
+
+/* slanting image section */
+.slant-img{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 70%);
+}
+
+/* heading section */
+.make-it-head{
+    color: var(--text-heading);
+    font-family: var(--font-heading);
+    letter-spacing: 2px;
+}
+
+/* coloring the one word */
+.make-it-col{
+    font-family: var(--font-heading);
+    color: var(--primary);
+}
+
+/* coloring the h3 section */
+.make-it-col-ch{
+    color: var(--text-heading);
+}
+
+/* coloring the paragraph section */
+.text-col-ch{
+    color: var(--text);
+}
+
+/* change the icon color */
+.ch-icon{
+    color: var(--primary);
+}
+
+@media(max-width:768px){
+    .slant-img{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+}

@@ -1,0 +1,66 @@
+*{
+
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+:root {
+  /* --primary: #2563eb; */
+  --primary: #144DB2;
+  --secondary: #F8BF16;
+  --background: #ffffff;
+  --text-heading:#313131;
+  --text: #333333;
+
+--font-heading: "Oswald", sans-serif;
+--font-body: "Roboto", sans-serif;
+}
+
+/* logo section */
+.col-ch{
+    font-family: var(--font-heading);
+    color: var(--text);
+}
+
+.col-ch span{
+    color: var(--primary);
+    font-family: var(--font-heading);
+}
+/* menu section */
+.men-tex{
+    color: var(--text);
+    transition: .15s ease;
+}
+
+/* hover bottom color section */
+.men-tex:hover{
+    color: var(--primary);
+}
+
+/* join button section */
+.bg-col{
+    color: var(--background);
+    background-color: var(--primary);
+    border: 1.9px solid var(--primary);
+    transition: .2s ease;
+}
+.bg-col:hover{
+    color: var(--primary);
+    background-color: var(--background);
+    transition: 0.3s ease-out;
+}
+.bg-col:active{
+    scale: .8;
+}
+
+/* mobile menu section */
+.mob-men-bg{
+    background-color: var(--primary);
+}
+.mob-men-font{
+    color: var(--background);
+}
+.mob-men-font:hover{
+    color: var(--secondary);
+}
